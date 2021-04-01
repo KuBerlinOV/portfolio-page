@@ -1,1 +1,0 @@
-const menuNav = document.querySelector('#menu-nav')
