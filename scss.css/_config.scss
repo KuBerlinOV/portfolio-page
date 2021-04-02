@@ -3,3 +3,14 @@ $background-color: rgb(27, 24, 24);
 $primary-color: rgb(255, 255, 255);
 $secondary-color: rgb(153, 153, 49);
 $background-opacity: 0.9;
+
+
+//menu animation
+
+@mixin easeInShow{
+    transition: opacity 1s ease-in 0s, visibility 0s linear 0s;
+};
+
+@mixin easeOutHide{
+    transition: opacity 0.5s ease-in 0s, visibility 0s linear 0.5s;
+}

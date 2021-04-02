@@ -1,5 +1,8 @@
 const menuBtn = document.querySelector('.menu-btn')
 const btnLines = document.querySelectorAll('.btn-line')
+const menu = document.querySelector('.menu')
+const main = document.querySelector('main')
+
 
 //menu button color change
 
@@ -19,3 +22,12 @@ menuBtn.addEventListener('mouseover', () => {
 menuBtn.addEventListener('mouseout', () => {
     changeColor()
 });
+
+
+//toggle menu and menu button
+
+menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('show')
+    main.classList.toggle('hide')
+    menuBtn.classList.toggle('close')
+})
