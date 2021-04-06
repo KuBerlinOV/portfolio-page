@@ -60,9 +60,56 @@ main{
             margin-top: 40vh;
             letter-spacing: 0.1em;
             text-align: center;
+            position: relative;
+            @include tdText;
+
+            //name animation
+            .firstname{
+                @include flicker1;
+            }
+            .lnKu{
+                position: relative;
+                @include dropText1;
+                // @include flicker;
+            }
+            .lnBerlin{
+                position: relative;
+                @include dropText2;
+            }
+            .lnOV{
+                position: relative;
+                @include dropText3;
+            }
         }
         .sm-heading{
             font-size: 1.5em;
+            @include tdText;
+            @include flicker2;
+        }
+    }
+
+    &#about{
+        display: flex;
+        flex-direction: row;
+        .about-branding{
+           width: 40%;
+           height: 100vh;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           img{
+            width: 260px;
+            height: 250px;
+            border-radius: 60%;
+           }
+        }
+        .about-me{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 50%;
+            height: 100vh;
+            padding: 2em;
         }
     }
 }

@@ -2,6 +2,7 @@
   position: fixed;
   width: 100%;
   top: 0;
+  text-shadow: #bbb 0 0 1px, #fff 0 -1px 2px, #fff 0 -3px 2px, rgba(0, 0, 0, 0.8) 0 30px 25px;
 }
 
 .menu.hide {
@@ -135,9 +136,141 @@ main#home .lg-heading {
   margin-top: 40vh;
   letter-spacing: 0.1em;
   text-align: center;
+  position: relative;
+  text-shadow: #bbb 0 0 1px, #fff 0 -1px 2px, #fff 0 -3px 2px, rgba(0, 0, 0, 0.8) 0 30px 25px;
+}
+
+main#home .lg-heading .firstname {
+  animation: flicker1 2s ease-in;
+}
+
+@keyframes flicker1 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  65% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.3;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+main#home .lg-heading .lnKu {
+  position: relative;
+  animation: droptext 3s ease-out 0s;
+}
+
+@keyframes droptext {
+  0% {
+    bottom: 20vh;
+    opacity: 0;
+  }
+  50% {
+    bottom: 20vh;
+    opacity: 0;
+  }
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+main#home .lg-heading .lnBerlin {
+  position: relative;
+  animation: droptext 4s ease-out 0s;
+}
+
+@keyframes droptext {
+  0% {
+    bottom: 20vh;
+    opacity: 0;
+  }
+  50% {
+    bottom: 20vh;
+    opacity: 0;
+  }
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+main#home .lg-heading .lnOV {
+  position: relative;
+  animation: droptext 5s ease-out 0s;
+}
+
+@keyframes droptext {
+  0% {
+    bottom: 20vh;
+    opacity: 0;
+  }
+  50% {
+    bottom: 20vh;
+    opacity: 0;
+  }
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
 }
 
 main#home .sm-heading {
   font-size: 1.5em;
+  text-shadow: #bbb 0 0 1px, #fff 0 -1px 2px, #fff 0 -3px 2px, rgba(0, 0, 0, 0.8) 0 30px 25px;
+  animation: flicker2 4.5s ease-in;
+}
+
+@keyframes flicker2 {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+main#about {
+  display: flex;
+  flex-direction: row;
+}
+
+main#about .about-branding {
+  width: 40%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main#about .about-branding img {
+  width: 260px;
+  height: 250px;
+  border-radius: 60%;
+}
+
+main#about .about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50%;
+  height: 100vh;
+  padding: 2em;
 }
 /*# sourceMappingURL=style.css.map */
